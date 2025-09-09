@@ -15,6 +15,10 @@ public class Logger {
     public static Logger getInstance(String logLevel, String filePath) {
         if(instance == null) {
             instance = new Logger(logLevel, filePath);
+        } else {
+            if(!instance.logLevel.equals(logLevel) || !instance.filePath.equals(filePath)) {
+                System.out.println("Already exist");
+            }
         }
         return instance;
     }
@@ -28,6 +32,12 @@ public class Logger {
     }
 
     public void log(String message) {
-        System.out.println("[" + this.logLevel + "] (" + this.filePath + "): " + message);
+        System.out.println("[" + logLevel + "] (" + filePath + "): " + message);
+    }
+
+    public void updateConfig(String logLevel, String filePath) {
+        this.logLevel = logLevel;
+        this.filePath = filePath;
+        System.out.println("Configuration updated");
     }
 }
