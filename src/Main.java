@@ -1,12 +1,25 @@
-import Statick.Logger;
-import Statick.ObjectCounter;
+import Interfaces.MusicalInstrument;
+import ProblemSolvingClasses.Drum;
+import ProblemSolvingClasses.Guitar;
+import ProblemSolvingClasses.Piano;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        Drum drum = new Drum();
+        Guitar guitar = new Guitar();
+        Piano piano = new Piano();
 
-        Logger logger1 = Logger.getInstance("DEBUG", "debug.log");
-        Logger logger2 = Logger.getInstance("ERROR", "error.log");
+        List<MusicalInstrument> musicalInstrumentList = new ArrayList<>();
 
-        System.out.println(logger1 == logger2);
+        musicalInstrumentList.add(drum);
+        musicalInstrumentList.add(guitar);
+        musicalInstrumentList.add(piano);
+
+        for(MusicalInstrument instrument : musicalInstrumentList) {
+            instrument.play();
+        }
     }
 }
