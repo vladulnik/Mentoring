@@ -1,10 +1,8 @@
 package problemSolvingClasses.figures;
 
-import interfaces.Shape;
+public class Circle extends Shape {
 
-public class Circle implements Shape {
-
-    private double radius;
+    private final double radius;
 
     public Circle(double radius) {
         this.radius = radius;

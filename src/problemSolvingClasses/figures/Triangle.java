@@ -1,12 +1,10 @@
 package problemSolvingClasses.figures;
 
-import interfaces.Shape;
+public class Triangle extends Shape {
 
-public class Triangle implements Shape {
-
-    private double firstSide;
-    private double secondSide;
-    private double thirdSide;
+    private final double firstSide;
+    private final double secondSide;
+    private final double thirdSide;
 
     public Triangle(double firstSide, double secondSide, double thirdSide) {
         this.firstSide = firstSide;

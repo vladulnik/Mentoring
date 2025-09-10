@@ -1,11 +1,9 @@
 package problemSolvingClasses.figures;
 
-import interfaces.Shape;
+public class Rectangle extends Shape {
 
-public class Rectangle implements Shape {
-
-    private double length;
-    private double width;
+    private final double length;
+    private final double width;
 
     public Rectangle(double length, double width) {
         this.length = length;
