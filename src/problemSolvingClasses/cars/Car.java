@@ -1,8 +1,6 @@
 package problemSolvingClasses.cars;
 
-import interfaces.forCars.Electric;
-
-public class ElectricCar extends Vehicle {
+public class Car extends Vehicle{
 
     @Override
     public void start() {
@@ -12,5 +10,9 @@ public class ElectricCar extends Vehicle {
     @Override
     public void stop() {
         super.stop();
+    }
+
+    public void refuel() {
+        System.out.println("Need fuel");
     }
 }
