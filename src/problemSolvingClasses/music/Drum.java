@@ -1,6 +1,6 @@
-package ProblemSolvingClasses;
+package problemSolvingClasses.music;
 
-import Interfaces.MusicalInstrument;
+import interfaces.MusicalInstrument;
 
 public class Drum implements MusicalInstrument {
 

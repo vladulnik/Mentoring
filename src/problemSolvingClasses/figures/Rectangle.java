@@ -1,6 +1,6 @@
-package ProblemSolvingClasses;
+package problemSolvingClasses.figures;
 
-import Interfaces.Shape;
+import interfaces.Shape;
 
 public class Rectangle implements Shape {
 

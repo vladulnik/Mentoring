@@ -1,9 +1,5 @@
-import Interfaces.MusicalInstrument;
-import Interfaces.Shape;
-import ProblemSolvingClasses.*;
-
-import java.util.ArrayList;
-import java.util.List;
+import interfaces.Shape;
+import problemSolvingClasses.figures.Triangle;
 
 public class Main {
     public static void main(String[] args) {

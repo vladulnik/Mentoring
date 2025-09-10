@@ -1,4 +1,4 @@
-package Statick;
+package statick;
 
 public class Connection {
 
