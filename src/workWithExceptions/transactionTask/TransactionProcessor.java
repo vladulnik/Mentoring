@@ -1,10 +1,10 @@
-package workWithExceptions;
+package workWithExceptions.transactionTask;
 
 public class TransactionProcessor {
 
     private static final Logger logger = Logger.getLogger(TransactionProcessor.class);
 
-    public void processTransaction(Transaction transaction)
+    public static void processTransaction(Transaction transaction)
             throws ValidationException, InsufficientFundsException {
 
         try {
@@ -24,13 +24,13 @@ public class TransactionProcessor {
         }
     }
 
-    private void validateTransaction(Transaction t) throws ValidationException {
+    private static void validateTransaction(Transaction t) throws ValidationException {
         if(t.getAmount() <= 0) {
             throw new ValidationException("Incorrect transaction sum");
         }
     }
 
-    private void processPayment(Transaction t) throws InsufficientFundsException {
+    private static void processPayment(Transaction t) throws InsufficientFundsException {
         if (t.getAccountBalance() < t.getAmount()) {
             throw new InsufficientFundsException("Insufficient funds in the account");
         }
@@ -38,11 +38,11 @@ public class TransactionProcessor {
         logger.info("Payment has been successfully completed for the amount: " + t.getAmount());
     }
 
-    private void completeTransaction(Transaction t) {
+    private static void completeTransaction(Transaction t) {
         logger.info("Transaction completed: " + t.getAccountId());
     }
 
-    private void rollbackTransaction(Transaction t) {
+    private static void rollbackTransaction(Transaction t) {
         logger.warning("Transaction canceled: " + t.getAccountId());
     }
 }

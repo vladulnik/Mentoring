@@ -1,4 +1,4 @@
-package workWithExceptions;
+package workWithExceptions.transactionTask;
 
 public class Transaction {
 
@@ -6,9 +6,10 @@ public class Transaction {
     private final String accountId;
     private double accountBalance;
 
-    public Transaction(double amount, String accountId) {
+    public Transaction(double amount, String accountId, double accountBalance) {
         this.amount = amount;
         this.accountId = accountId;
+        this.accountBalance = accountBalance;
     }
 
     public double getAmount() {

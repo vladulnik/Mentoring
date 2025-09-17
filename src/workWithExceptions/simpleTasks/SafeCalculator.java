@@ -1,4 +1,4 @@
-package workWithExceptions;
+package workWithExceptions.simpleTasks;
 
 public class SafeCalculator {
     public static int divide(int a, int b) {

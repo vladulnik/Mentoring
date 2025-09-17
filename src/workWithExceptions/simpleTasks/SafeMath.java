@@ -1,4 +1,4 @@
-package workWithExceptions;
+package workWithExceptions.simpleTasks;
 
 public class SafeMath {
     public static int safeMultiply(int a, int b) {
