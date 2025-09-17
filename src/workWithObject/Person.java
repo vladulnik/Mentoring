@@ -4,9 +4,9 @@ import java.util.List;
 import java.util.Objects;
 
 public class Person {
-    private String name;
-    private int age;
-    private List<String> hobbies;
+    private final String name;
+    private final int age;
+    private final List<String> hobbies;
 
     public Person(String name, int age, List<String> hobbies) {
         this.name = name;

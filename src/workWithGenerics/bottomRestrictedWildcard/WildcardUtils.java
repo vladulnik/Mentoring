@@ -1,5 +1,7 @@
 package workWithGenerics.bottomRestrictedWildcard;
 
+import workWithGenerics.bottomRestrictedWildcard.fruitsTask.Banana;
+
 import java.util.List;
 
 public class WildcardUtils {

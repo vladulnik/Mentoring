@@ -1,8 +1,5 @@
 package workWithGenerics.unlimitedWildcard;
 
-import workWithGenerics.wildcardLimitedAbove.Animal;
-import workWithGenerics.wildcardLimitedAbove.Box;
-
 import java.util.Collection;
 import java.util.List;
 import java.util.Objects;
